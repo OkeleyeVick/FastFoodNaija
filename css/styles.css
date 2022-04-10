@@ -709,7 +709,7 @@ section .box:first-child .img-fluid{
 }
 /* end of style for section 7*/
 
-@media screen and (min-width: 502px) and (max-width: 1200px){
+@media screen and (min-width: 551px) and (max-width: 991px){
     p{
         font-family: 'Poppins';
         font-size: 80%;
@@ -745,6 +745,7 @@ section .box:first-child .img-fluid{
     }   
     .icons-and-toggle {
         width: auto;
+        align-items: center;
     }
     .text-banner h1{
         margin: 0;
@@ -840,7 +841,7 @@ section .box:first-child .img-fluid{
 
 
 }
-@media screen and (min-width: 320px) and (max-width:501px){
+@media screen and (max-width:550px){
     p, h1, h2, h3, h4, h5, h6{
         font-family: 'Poppins' !important;
     }
