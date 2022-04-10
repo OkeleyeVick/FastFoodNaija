@@ -16,83 +16,7 @@
 <body>
    <style>
    @media screen and (min-width: 502px) and (max-width: 1024px){
-    p{
-        font-family: 'Poppins';
-        font-size: 75%;
-    }
-    button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
-        cursor: pointer;
-        font-size: 80%;
-    }
-    header{
-        height: 55px;
-        padding: 0;
-    }
-    .navbar{
-        justify-content: space-evenly;
-    }
-    .navbar > .container{
-        margin: 0 auto;
-        padding: 0;
-    }
-    .links{
-        width: 150px;
-    }
-    .cart{
-        border: unset; 
-        border-radius: unset;
-    }
-    .cart a{
-        display: none;
-    }
-    .links ul {
-        width: unset;
-        display: none;
-    }   
-    .icons-and-toggle {
-        width: auto;
-    }
-    .text-banner h1{
-        margin: 0;
-        font-size: 1.8rem;
-    }
-    .text-banner h1 img {
-        width: 90px;
-        left: -20px;
-        bottom: 2px;
-    }
-    .m-md-auto {
-        margin: 0 !important;
-    }
-    .image-banner span{
-        display: none;
-    }
-    .image-banner .map-bg {
-        height: 300px;
-        width: 400px;   
-        margin: 0 auto;
-    }
-    .image-banner .map-bg .map-logo {
-        right: -50px;
-    }
-    .image-banner .map-bg .man-on-map {
-        right: -110px;
-        max-width: 95%
-    }
-    .redbg-description{
-        text-align: center;
-        margin: 0 auto;
-    }
-    #section-three .container .row section{
-        padding: 0;
-        margin: 20px auto;
-    }
-    .box{
-        margin: 0 15px;
-        padding: 30px 20px;
-        float: left;
-        width: 29%;
-    }
+    
 }
 
    </style>
@@ -126,7 +50,7 @@
                         <div class="logo d-inline-block">
                             <i class="icon-search2"></i>
                         </div>
-                        <div class="logo d-inline-block">
+                        <div class="logo d-none d-md-inline-block">
                             <i class="icon-notifications_none"></i>
                         </div>
                         <div class="logo cart d-inline-flex">
@@ -134,8 +58,8 @@
                             <a href="">Cart List</a>
                         </div>
                     </div>
-                    
-                    <div class="btn slide-toggle position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <div><i class="icon-user-circle mx-1"></i></div>
+                    <div class="btn slide-toggle position-relative d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -146,45 +70,23 @@
         </nav>
     </header>
     <div>
-        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Enable backdrop (default)</button> -->
-        <!-- <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <p>Try scrolling the rest of the page to see this option in action.</p>
-            </div>
-        </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <p>.....</p>
-            </div>
-        </div> -->
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <h5 class="offcanvas-title text-danger" id="offcanvasWithBothOptionsLabel">Fast Food Naija</h5>
                 <a type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></a>
             </div>
             <div class="offcanvas-body">
-                <p>Try scrolling the rest of the page to see this option in action.</p>
+                
             </div>
         </div>
     </div>
-
-
          <!-------------------- body section -------------------->
 
 
     <main>
          <!-------------------- first section -------------------->
         <div class="container row d-flex justify-content-center align-items-md-center p-md-0 p-lg-0 first-section mx-lg-auto ">
-            <div class="col-md-4 col-lg-4 text-banner">
+            <div class="d-none d-md-block col-md-4 col-lg-4 text-banner">
                 <h1>Fastest <img src="images/delivery-man.png" class="position-relative" alt=""><div>Food Delivery</div><span>In Nigeria</span></h1>
 
                 <button class="btn btn-danger d-lg-flex align-items-center">Order Now <i class="icon-arrow_forward ms-lg-2"></i></button>
@@ -207,14 +109,10 @@
                 
             </div>
         </div>
-
          <!-------------------- end of first section -------------------->
 
-
-
            <!-------------------- 2nd section -------------------->
-
-        <section id="section-two">
+       <section id="section-two">
            <div class="container">
                 <div class="text-center">
                     <h2>Best Selling Food</h2>
@@ -385,11 +283,11 @@
         <section id="section-four">
             <div class="container">
                 <h2 class="text-black-50 text-center">Explore our foods</h2>
-                <div class="subheader d-lg-flex justify-content-lg-between">
+                <div class="subheader d-flex justify-content-between align-items center my-4">
                     <div class="col-6">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis illo tenetur voluptate. Explicabo totam, dolorem laudantium fugiat architecto illo quo.</p>
                     </div>
-                    <div class="col-1">
+                    <div class="col-2">
                         <button href="" class="btn btn-danger">See All</button>
                     </div>
                 </div>
@@ -584,12 +482,12 @@
                             <img src="images/delivery-guy2.png" class="img-fluid" alt="">
                         </div>
                     </section>
-                    <section class="customerReviews col-12 col-md-6 col-lg-7">
-                        <div class="text-start">
+                    <section class="customerReviews col-12 col-md-6 col-lg-7 mt-5 ">
+                        <div class="text-center text-lg-start">
                             <h3>Customers Reviews</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aspernatur similique perferendis quisquam molestias est?</p>
                         </div>
-                        <div class="review">
+                        <div class="review mt-4 mt-md-5 mt-lg-auto">
                             <h5>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt praesentium possimus odit.
                             </h5>
@@ -611,7 +509,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-lg-end mt-lg-2">
+                        <div class="text-end mt-lg-2">
                             <button class="btn btn-danger icon-long-arrow-left"></button>
                             <button class="btn btn-danger icon-long-arrow-right"></button>
                         </div>
@@ -622,27 +520,22 @@
 
           <!-------------------- end of 5th section -------------------->
 
-
-<style>
-    @media screen and (min-width: 320px) and (max-width: 501px){
-        
-    }
-</style>
           <!-------------------- start of 6th section -------------------->
         <section id="section-six">
             <div class="container">
                 <div class="row">
-                    <div class="input col-12 row col-md-8">
-                        <div class="col-12 col-md-6 my-3">
+                    <div class="input col-12 row mx-auto col-md-8">
+                        <h2 class="text-white">Give us a review</h2>
+                        <div class="col-12 col-md-6 my-2">
                             <input type="text" class="form-control" placeholder="Fullname" aria-label="Fullname">
                         </div>
-                        <div class="col-12 col-md-6 my-3">
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                        <div class="col-12 col-md-6 my-2">
+                            <input type="text" class="form-control" placeholder="Profession" aria-label="Email">
                         </div>
-                        <div class="form-floating text-center">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; "></textarea>
+                        <div class="form-floating text-center mt-2">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 60px; "></textarea>
                             <a href="" class="btn btn-danger ">Submit</a>
-                            <label for="floatingTextarea2" class="text-muted">Leave us a message or complaints</label>
+                            <label for="floatingTextarea2" class="text-muted">Leave us a review</label>
                           </div>
                     </div>
                     <div class="imagery position-relative col-4 d-none d-md-block">
@@ -654,9 +547,6 @@
                 </div>
             </div>
         </section>
-
-
-          
           <!-------------------- end of 6th section -------------------->
 
 
