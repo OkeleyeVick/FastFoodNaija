@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
 }
-* button:focus, * input:focus, * .btn:focus{
-    box-shadow: none;
+* p, * h1, * h2, * h3, * h4, * h5, * h6,* span{
+    font-family: Tahoma;
 }
 a{
     text-decoration: none;
@@ -695,9 +695,23 @@ section .box:first-child .img-fluid{
 /* end of style for section 7*/
 
 @media screen and (min-width: 502px) and (max-width: 1024px){
+    
     header{
         height: 55px;
-        background-color: red !important;
+        padding: 0;
+    }
+    .navbar > .container{
+        margin: 0 auto;
+    }
+    .links{
+        width: 150px;
+    }
+    .cart{
+        border: unset; 
+        border-radius: unset;
+    }
+    .cart a{
+       display: none;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 501px){

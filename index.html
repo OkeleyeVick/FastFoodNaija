@@ -15,24 +15,96 @@
 </head>
 <body>
    <style>
-    /* @media screen and (min-width: 320px) and (max-width: 501px){
+   @media screen and (min-width: 502px) and (max-width: 1024px){
+    p{
+        font-family: 'Poppins';
+        font-size: 75%;
+    }
+    button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+        cursor: pointer;
+        font-size: 80%;
+    }
     header{
         height: 55px;
+        padding: 0;
     }
-    .icons-and-toggle{
-        width: 200px;
+    .navbar{
+        justify-content: space-evenly;
     }
-    } */
+    .navbar > .container{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .links{
+        width: 150px;
+    }
+    .cart{
+        border: unset; 
+        border-radius: unset;
+    }
+    .cart a{
+        display: none;
+    }
+    .links ul {
+        width: unset;
+        display: none;
+    }   
+    .icons-and-toggle {
+        width: auto;
+    }
+    .text-banner h1{
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    .text-banner h1 img {
+        width: 90px;
+        left: -20px;
+        bottom: 2px;
+    }
+    .m-md-auto {
+        margin: 0 !important;
+    }
+    .image-banner span{
+        display: none;
+    }
+    .image-banner .map-bg {
+        height: 300px;
+        width: 400px;   
+        margin: 0 auto;
+    }
+    .image-banner .map-bg .map-logo {
+        right: -50px;
+    }
+    .image-banner .map-bg .man-on-map {
+        right: -110px;
+        max-width: 95%
+    }
+    .redbg-description{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #section-three .container .row section{
+        padding: 0;
+        margin: 20px auto;
+    }
+    .box{
+        margin: 0 15px;
+        padding: 30px 20px;
+        float: left;
+        width: 29%;
+    }
+}
+
    </style>
     <header class=" header">
         <nav class="navbar">
-            <div class="container">
+            <div class="container container mx-md-0 mx-lg-auto">
                 <!-- <a class="navbar-brand" href=""><img src="images/brand-logo.png" alt=""></a> -->
                 <div>
                     <a class="navbar-brand" href="">Fast Food Naija</a>
                 </div>
                 
-                <div class="links d-none d-md-block" id="navbarNav">
+                <div class="links d-none d-md-flex" id="navbarNav">
                     <ul class="navbar-nav" style="flex-direction: unset;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -111,8 +183,8 @@
 
     <main>
          <!-------------------- first section -------------------->
-        <div class="container d-flex justify-content-center align-items-lg-center">
-            <div class="col-lg-4 text-banner">
+        <div class="container row d-flex justify-content-center align-items-md-center p-md-0 p-lg-0 first-section mx-lg-auto ">
+            <div class="col-md-4 col-lg-4 text-banner">
                 <h1>Fastest <img src="images/delivery-man.png" class="position-relative" alt=""><div>Food Delivery</div><span>In Nigeria</span></h1>
 
                 <button class="btn btn-danger d-lg-flex align-items-center">Order Now <i class="icon-arrow_forward ms-lg-2"></i></button>
@@ -121,7 +193,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-8 image-banner position-relative">
+            <div class="col-md-4 col-lg-8 image-banner position-relative">
                 <span>Lagos</span>
                 <span>Abuja</span>
                 <span>Ibadan</span>
@@ -245,18 +317,21 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quia illo aut quaerat, qui quasi? Voluptatibus, blanditiis vel! Consequuntur consectetur sit alias hic sequi ut similique voluptate aut. Iste!</p>
                 </div>
                 <div class="chooseUsBody row align-items-lg-end">
-                    <section class="col-12 col-md-3">
-                        <div class="redbg position-relative">
+                    <section class="gap-md-5 col-12 col-lg-3 d-lg-auto d-md-flex align-items-md-center">
+                        <div class="redbg position-relative col-md-5">
                             <img src="images/delivery-guy1.png" class="img-fluid employee-image" alt="">
                         </div>
+                        <div class="redbg-description d-block d-lg-none col-md-5">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia laudantium odit eos vitae reiciendis provident. Excepturi dolorum nesciunt facere rem perferendis provident illo voluptas! Dolorem architecto quia beatae ex.</p>
+                        </div>
                     </section>
-                    <section class="col-10 col-md-9 text-center text-lg-end position-relative">
-                        <div class="box text-center  my-sm-4 my-lg-0 d-block d-lg-inline-block col-10 col-md-3">
+                    <section class="col-10 col-md-12 col-lg-9 text-center text-lg-end position-relative">
+                        <div class="box text-center my-sm-4 my-lg-0 d-block d-lg-inline-block col-10 col-md-3">
                             <img src="images/list.png" class="img-fluid" alt="">
                             <h3>Easy To Order</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, corrupti? Atque, cumque.</p>
                         </div>
-                        <div class="box text-center  my-sm-4 my-lg-0 d-block d-lg-inline-block col-10 col-md-3">
+                        <div class="box text-center my-sm-4 my-lg-0 d-block d-lg-inline-block col-10 col-md-3">
                             <img src="images/delivery-van.png" class="img-fluid" alt="">
                             <h3>Easy To Order</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, corrupti? Atque, cumque.</p>
@@ -504,12 +579,12 @@
         <section id="section-five">
             <div class="container">
                 <div class="row">
-                    <section class="employee-image col-lg-4 ">
+                    <section class="employee-image col-10 col-md-6 col-lg-4 ">
                         <div class="redbg">
                             <img src="images/delivery-guy2.png" class="img-fluid" alt="">
                         </div>
                     </section>
-                    <section class="customerReviews col-lg-7">
+                    <section class="customerReviews col-12 col-md-6 col-lg-7">
                         <div class="text-start">
                             <h3>Customers Reviews</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aspernatur similique perferendis quisquam molestias est?</p>
