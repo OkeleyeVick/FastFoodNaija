@@ -14,16 +14,245 @@
     <title>Fast Food Naija</title>
 </head>
 <body>
-   <style>
-   @media screen and (min-width: 502px) and (max-width: 1024px){
-    
+    <style>
+        
+@media screen and (max-width:550px){
+    p, h1, h2, h3, h4, h5, h6{
+        font-family: 'Poppins' !important;
+    }
+    header{
+        height: auto;
+        padding: 0 7px;
+        width: 100%;
+    }
+    .icons-and-toggle{
+        width: auto;
+        justify-content: end;
+        align-items: center;
+    }
+    .icons-and-toggle .logo i {
+        font-size: 18px; 
+        margin: 0 2px;
+        color: #000;
+    }
+    .icons-and-toggle .mx-1{
+        font-size: 16px;
+        color: #000;
+    }
+    .slide-toggle{
+        height: 24px;
+        margin: 0 0 0 10px;
+    }
+    .cart{
+        border: unset; 
+        border-radius: unset;
+    }
+    .cart a{
+       display: none;
+    }
+    .m-md-auto {
+        margin: 0 !important;
+    }
+    .image-banner span{
+        font-size: 10px;
+    }
+    .image-banner span::before{
+        width: 7px;
+        height: 7px;
+        bottom: -3px;
+    }
+    .image-banner span::after{
+        border:3px solid grey;
+        bottom: -51%;
+        left: 19%;
+        width: 25px;
+    }
+    .image-banner span:nth-child(1){
+        top: 35px !important;
+        right: -20% !important;
+    }
+    .image-banner span:nth-child(2){
+        top: 70px !important;
+        right: -60% !important;
+    }
+    .image-banner span:nth-child(3){
+        top: 200px !important;
+        left: 53% !important;
+    }
+    .image-banner span:nth-child(4){
+        top: 50px !important;
+        left: 15% !important;
+    }
+    .image-banner span:nth-child(5){
+        left: -100px !important;
+        top: 260px !important;
+    }
+    .image-banner .map-bg {
+        height: 300px;
+        width: 400px;   
+        margin: 0 auto;
+    }
+    .image-banner .map-bg .map-logo {
+        left: 0;
+    }
+    .image-banner .map-bg .man-on-map {
+        left: 18%;;
+        max-width: 95%
+    }
+    #section-three section .redbg{
+        margin: 0 auto;
+    }
+    section .redbg {
+        width: 300px;
+        height: 260px;
+    }
+    #section-three section .redbg img {
+        bottom: -4%;
+        height: 250px;
+        width: 350px;
+    }
+    .box{
+        margin: 2.5em auto;
+        height: 30%;
+        width: 65%;
+        padding: 35px;
+    }
+    .box:nth-child(1) {
+        animation: slideup .3s ease-in-out 7s forwards;
+    }
+    @keyframes slideup{
+        from{
+            transform: scale(0);
+            opacity: 0;
+        }
+        to{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .box:nth-child(2) {
+        animation: up .45s ease-in-out 7.2s forwards;
+    }
+    @keyframes up{
+        from{
+            transform: scale(0);
+            opacity: 0;
+        }
+        to{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .box:nth-child(3) {
+        animation: next .6s ease-in-out 7.4s forwards;   
+    }
+    @keyframes next{
+        from{
+            transform: scale(0);
+            opacity: 0;
+        }
+        to{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    #section-five .redbg{
+        margin: 0 auto;
+    }
+    #section-five section .redbg img {
+        bottom: -10px;
+        height: 250px;
+        width: 400px;
+    }
+    .reviewer {
+        margin: 0;
+        padding: 0;
+    }
+    .review h5 {
+        margin: 0 auto;
+        font-size: .9rem;
+        text-align: center;
+        width: 80%;
+    }
+    #section-six{
+        padding: 20px  0;
+    }
+    #section-two{
+        padding: 50px 0;
+    }
+    .foods-appetizer {
+        display: block;
+    }
+    .appetizer {
+        justify-content: center;
+        margin: 20px auto;
+        width: 50%;
+    }
+    .appetizer-image {
+        padding: 14px 16px;
+        flex-direction: column;
+    }
+    .imagery{
+        top: -150px;
+        left: 50px;
+        animation: slipin .7s ease-in-out;
+    }      
+    .appetizer{
+        align-items: center;
+        opacity: 0;
+    }
+    .appetizer:nth-child(1),
+    .appetizer:nth-child(2),
+    .appetizer:nth-child(3),
+    .appetizer:nth-child(4){
+        animation: 1s slideIn ease-in-out forwards;
+    }
+    .appetizer:nth-child(1){
+        animation-delay: 6s;
+    }
+    .appetizer:nth-child(2){
+        animation-delay: 6.2s;
+    }
+    .appetizer:nth-child(3){
+        animation-delay: 6.4s;
+    }
+    .appetizer:nth-child(4){
+        animation-delay: 6.6s;
+    }
+    @keyframes slideIn{
+        0%{
+            transform: translateX(75px);
+            opacity: 0;
+        }
+        50%{
+            transform: translateX(0);
+            opacity: .6;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+
+    .form-floating > label{
+        font-size: .8rem;
+        font-family: 'Poppins';
+    }
+    .form-control{
+        font-size: .8rem;
+    }
+    .form-floating > a{
+        font-size: .8rem;
+    }
+
 }
 
-   </style>
-    <header class=" header">
+    </style>
+    <header class="header">
         <nav class="navbar">
             <div class="container container mx-md-0 mx-lg-auto">
-                <!-- <a class="navbar-brand" href=""><img src="images/brand-logo.png" alt=""></a> -->
                 <div>
                     <a class="navbar-brand" href="">Fast Food Naija</a>
                 </div>
@@ -85,34 +314,34 @@
 
     <main>
          <!-------------------- first section -------------------->
-        <div class="container row d-flex justify-content-center align-items-md-center p-md-0 p-lg-0 first-section mx-lg-auto ">
-            <div class="d-none d-md-block col-md-4 col-lg-4 text-banner">
-                <h1>Fastest <img src="images/delivery-man.png" class="position-relative" alt=""><div>Food Delivery</div><span>In Nigeria</span></h1>
+        <!-- <div class="container d-flex justify-content-center align-items-md-center p-md-0 p-lg-0 first-section mx-lg-auto ">
+            <div class="row">
+                <div class="d-none d-md-block col-md-4 col-lg-4 text-banner">
+                    <h1>Fastest <img src="images/delivery-man.png" class="position-relative" alt=""><div>Food Delivery</div><span>In Nigeria</span></h1>
 
-                <button class="btn btn-danger d-lg-flex align-items-center">Order Now <i class="icon-arrow_forward ms-lg-2"></i></button>
-                <div class="my-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet ad delectus, provident nulla reiciendis sequi asperiores!</p>
+                    <button class="btn btn-danger d-lg-flex align-items-center">Order Now <i class="icon-arrow_forward ms-lg-2"></i></button>
+                    <div class="my-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet ad delectus, provident nulla reiciendis sequi asperiores!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-8 image-banner position-relative">
+                    <span>Lagos</span>
+                    <span>Abuja</span>
+                    <span>Ibadan</span>
+                    <span>Rivers</span>
+                    <span>Ekiti</span>
+                    <div class="map-bg position-relative">
+                        <img src="images/map-logo.png" class="map-logo img-fluid" alt="" srcset=""> 
+                        <img src="images/real-delivery-man.png" class="man-on-map img-fluid" alt="" srcset=""> 
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-lg-8 image-banner position-relative">
-                <span>Lagos</span>
-                <span>Abuja</span>
-                <span>Ibadan</span>
-                <span>Rivers</span>
-                <span>Ekiti</span>
-                <div class="map-bg position-relative">
-                    <img src="images/map-logo.png" class="map-logo img-fluid" alt="" srcset=""> 
-                    <img src="images/real-delivery-man.png" class="man-on-map img-fluid" alt="" srcset=""> 
-                </div>
-                
-                
-            </div>
-        </div>
+        </div>  -->
          <!-------------------- end of first section -------------------->
 
            <!-------------------- 2nd section -------------------->
-       <section id="section-two">
+        <section id="section-two">
            <div class="container">
                 <div class="text-center">
                     <h2>Best Selling Food</h2>
@@ -240,7 +469,6 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, corrupti? Atque, cumque.</p>
                         </div>
                     </section>
-                    
                 </div>
             </div>
         </section>
@@ -283,7 +511,7 @@
         <section id="section-four">
             <div class="container">
                 <h2 class="text-black-50 text-center">Explore our foods</h2>
-                <div class="subheader d-flex justify-content-between align-items center my-4">
+                <div class="subheader d-flex justify-content-between align-items-center my-4">
                     <div class="col-6">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis illo tenetur voluptate. Explicabo totam, dolorem laudantium fugiat architecto illo quo.</p>
                     </div>
@@ -474,7 +702,7 @@
 
 
         <!-------------------- start of 5th section -------------------->
-        <section id="section-five">
+        <!-- <section id="section-five">
             <div class="container">
                 <div class="row">
                     <section class="employee-image col-10 col-md-6 col-lg-4 ">
@@ -516,7 +744,7 @@
                     </section>
                 </div>
             </div>
-        </section>
+        </section> -->
 
           <!-------------------- end of 5th section -------------------->
 

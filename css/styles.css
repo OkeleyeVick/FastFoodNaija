@@ -848,9 +848,10 @@ section .box:first-child .img-fluid{
     header{
         height: auto;
         padding: 0 7px;
+        width: auto;
     }
     .icons-and-toggle{
-        width: 170px;
+        width: auto;
         justify-content: end;
         align-items: center;
     }
@@ -861,6 +862,7 @@ section .box:first-child .img-fluid{
     }
     .icons-and-toggle .mx-1{
         font-size: 16px;
+        color: #000;
     }
     .slide-toggle{
         height: 24px;
