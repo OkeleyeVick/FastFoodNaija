@@ -118,7 +118,7 @@ span{
 }
 main{
     position: relative;
-    top: 60px;
+    top: 45px;
 }
 .text-banner h1 {
     font-size: 3rem;
@@ -566,7 +566,7 @@ section .box:first-child .img-fluid{
     border-top-left-radius: 8rem;
     border-top-right-radius: .2em;
 }
-#section-five section .redbg img{
+#section-five div .redbg img{
     position: relative;
     left: -55px;
     bottom: 10px;
@@ -840,15 +840,14 @@ section .box:first-child .img-fluid{
 
 
 
-}
-@media screen and (max-width:550px){
+}@media screen and (max-width:550px){
     p, h1, h2, h3, h4, h5, h6{
         font-family: 'Poppins' !important;
     }
     header{
-        height: auto;
+        height: 45px;
         padding: 0 7px;
-        width: auto;
+        width: 100%;
     }
     .icons-and-toggle{
         width: auto;
@@ -856,12 +855,12 @@ section .box:first-child .img-fluid{
         align-items: center;
     }
     .icons-and-toggle .logo i {
-        font-size: 18px; 
-        margin: 0 2px;
+        font-size: 22px; 
+        margin: 0 1px;
         color: #000;
     }
     .icons-and-toggle .mx-1{
-        font-size: 16px;
+        font-size: 19px;
         color: #000;
     }
     .slide-toggle{
@@ -873,13 +872,20 @@ section .box:first-child .img-fluid{
         border-radius: unset;
     }
     .cart a{
-       display: none;
+        display: none;
+    }
+    .offcanvas-start {
+        width: calc(100vw - 50px);
+    }
+    main{
+        position: relative;
+        top: 50px;
     }
     .m-md-auto {
         margin: 0 !important;
     }
     .image-banner span{
-        font-size: 10px;
+        font-size: 8px;
     }
     .image-banner span::before{
         width: 7px;
@@ -900,36 +906,98 @@ section .box:first-child .img-fluid{
         top: 70px !important;
         right: -60% !important;
     }
-    .image-banner span:nth-child(3){
-        top: 200px !important;
-        left: 53% !important;
+    .image-banner span:nth-child(3) {
+        top: 180px !important;
+        left: 40% !important;
     }
     .image-banner span:nth-child(4){
         top: 50px !important;
         left: 15% !important;
     }
-    .image-banner span:nth-child(5){
-        left: -100px !important;
-        top: 260px !important;
+    .image-banner span:nth-child(5) {
+        right: 20px !important;
+        top: 180px !important;
     }
     .image-banner .map-bg {
-        height: 300px;
-        width: 400px;   
+        height: 210px;
+        width: 300px;  
         margin: 0 auto;
     }
     .image-banner .map-bg .map-logo {
         left: 0;
     }
     .image-banner .map-bg .man-on-map {
-        left: 18%;;
-        max-width: 95%
+        left: 18%;
+        max-width: 90%;
+    }
+    #section-two{
+        padding: 50px 0;
     }
     #section-three section .redbg{
         margin: 0 auto;
     }
+    .appetizer {
+        margin: 20px auto;
+        width: 80% !important;
+        padding: 10px;
+    }
+    .appetizer img {
+        width: 65px;
+        height: auto;
+    }
+    .appetizer-image button, .pt-3 {
+        font-size: 11px;
+    }
+    .appetizer-description {
+        padding: 14px 0;
+        display: none;
+    }
+    .appetizer-description h3 {
+        margin: '';
+        font-weight: bolder;
+    }
+    .appetizer-description h5 {
+        font-size: 12px;
+        margin: '';
+    }
+    .appetizer:nth-child(1),
+    .appetizer:nth-child(2),
+    .appetizer:nth-child(3),
+    .appetizer:nth-child(4){
+        animation: 1s slideIn ease-in-out forwards;
+    }
+    .appetizer:nth-child(1){
+        animation-delay: 6s;
+    }
+    .appetizer:nth-child(2){
+        animation-delay: 6.2s;
+    }
+    .appetizer:nth-child(3){
+        animation-delay: 6.4s;
+    }
+    .appetizer:nth-child(4){
+        animation-delay: 6.6s;
+    }
+    @keyframes slideIn{
+        0%{
+            transform: translateX(75px);
+            opacity: 0;
+        }
+        50%{
+            transform: translateX(0);
+            opacity: .6;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    .pt-3 {
+        padding: .4rem 1rem !important;
+    }
     section .redbg {
-        width: 300px;
-        height: 260px;
+        width: 260px;
+        height: auto;
     }
     #section-three section .redbg img {
         bottom: -4%;
@@ -981,13 +1049,29 @@ section .box:first-child .img-fluid{
             opacity: 1;
         }
     }
+    #section-four .col-7 p {
+        margin: 0;
+        font-size: 12px;
+    }
+    #section-four .btn-danger {
+        font-size: 11px;
+    }
     #section-five .redbg{
         margin: 0 auto;
     }
-    #section-five section .redbg img {
-        bottom: -10px;
-        height: 250px;
+    section .redbg {
+        width: 270px;
+        height: auto;
+    }
+    #section-five div .redbg img {
+        right: 50%;
+        bottom: 0;
+        height: 300px;
         width: 400px;
+        max-width: unset;
+    }
+    .customerReviews {
+        padding: 0 20px;
     }
     .reviewer {
         margin: 0;
@@ -1000,67 +1084,13 @@ section .box:first-child .img-fluid{
         width: 80%;
     }
     #section-six{
-        padding: 20px  0;
-    }
-    #section-two{
-        padding: 50px 0;
-    }
-    .foods-appetizer {
-        display: block;
-    }
-    .appetizer {
-        justify-content: center;
-        margin: 20px auto;
-        width: 50%;
-    }
-    .appetizer-image {
-        padding: 14px 16px;
-        flex-direction: column;
+        padding: 20px 0;
     }
     .imagery{
         top: -150px;
         left: 50px;
         animation: slipin .7s ease-in-out;
-    }      
-    .appetizer{
-        align-items: center;
-        opacity: 0;
-    }
-    .appetizer:nth-child(1),
-    .appetizer:nth-child(2),
-    .appetizer:nth-child(3),
-    .appetizer:nth-child(4){
-        animation: 1s slideIn ease-in-out forwards;
-    }
-    .appetizer:nth-child(1){
-        animation-delay: 6s;
-    }
-    .appetizer:nth-child(2){
-        animation-delay: 6.2s;
-    }
-    .appetizer:nth-child(3){
-        animation-delay: 6.4s;
-    }
-    .appetizer:nth-child(4){
-        animation-delay: 6.6s;
-    }
-    @keyframes slideIn{
-        0%{
-            transform: translateX(75px);
-            opacity: 0;
-        }
-        50%{
-            transform: translateX(0);
-            opacity: .6;
-        }
-        100%{
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-
-
-
+    } 
     .form-floating > label{
         font-size: .8rem;
         font-family: 'Poppins';
@@ -1071,8 +1101,11 @@ section .box:first-child .img-fluid{
     .form-floating > a{
         font-size: .8rem;
     }
+    #scrollToTop {
+        font-size: 22px;
+        padding: 18px 15px;
+    }
 
 }
-
 
 

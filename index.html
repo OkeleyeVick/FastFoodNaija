@@ -16,264 +16,7 @@
 <body>
     <style>
         
-@media screen and (max-width:550px){
-    p, h1, h2, h3, h4, h5, h6{
-        font-family: 'Poppins' !important;
-    }
-    header{
-        height: 50px;
-        padding: 0 7px;
-        width: 100%;
-    }
-    .icons-and-toggle{
-        width: auto;
-        justify-content: end;
-        align-items: center;
-    }
-    .icons-and-toggle .logo i {
-        font-size: 18px; 
-        margin: 0 2px;
-        color: #000;
-    }
-    .icons-and-toggle .mx-1{
-        font-size: 16px;
-        color: #000;
-    }
-    .slide-toggle{
-        height: 24px;
-        margin: 0 0 0 10px;
-    }
-    .cart{
-        border: unset; 
-        border-radius: unset;
-    }
-    .cart a{
-        display: none;
-    }
-    .offcanvas-start {
-        width: calc(100vw - 50px);
-    }
-    main{
-        position: relative;
-        top: 50px;
-    }
-    .m-md-auto {
-        margin: 0 !important;
-    }
-    .image-banner span{
-        font-size: 8px;
-    }
-    .image-banner span::before{
-        width: 7px;
-        height: 7px;
-        bottom: -3px;
-    }
-    .image-banner span::after{
-        border:3px solid grey;
-        bottom: -51%;
-        left: 19%;
-        width: 25px;
-    }
-    .image-banner span:nth-child(1){
-        top: 35px !important;
-        right: -20% !important;
-    }
-    .image-banner span:nth-child(2){
-        top: 70px !important;
-        right: -60% !important;
-    }
-    .image-banner span:nth-child(3) {
-        top: 180px !important;
-        left: 40% !important;
-    }
-    .image-banner span:nth-child(4){
-        top: 50px !important;
-        left: 15% !important;
-    }
-    .image-banner span:nth-child(5) {
-        right: 20px !important;
-        top: 180px !important;
-    }
-    .image-banner .map-bg {
-        height: 210px;
-        width: 300px;  
-        margin: 0 auto;
-    }
-    .image-banner .map-bg .map-logo {
-        left: 0;
-    }
-    .image-banner .map-bg .man-on-map {
-        left: 18%;
-        max-width: 90%;
-    }
-    #section-two{
-        padding: 50px 0;
-    }
-    #section-three section .redbg{
-        margin: 0 auto;
-    }
-    .appetizer {
-        margin: 20px auto;
-        width: 80% !important;
-        padding: 10px;
-    }
-    .appetizer img {
-        width: 65px;
-        height: auto;
-    }
-    .appetizer-image button, .pt-3 {
-        font-size: 11px;
-    }
-    .appetizer-description {
-        padding: 14px 0;
-        display: none;
-    }
-    .appetizer-description h3 {
-        margin: '';
-        font-weight: bolder;
-    }
-    .appetizer-description h5 {
-        font-size: 12px;
-        margin: '';
-    }
-    .appetizer:nth-child(1),
-    .appetizer:nth-child(2),
-    .appetizer:nth-child(3),
-    .appetizer:nth-child(4){
-        animation: 1s slideIn ease-in-out forwards;
-    }
-    .appetizer:nth-child(1){
-        animation-delay: 6s;
-    }
-    .appetizer:nth-child(2){
-        animation-delay: 6.2s;
-    }
-    .appetizer:nth-child(3){
-        animation-delay: 6.4s;
-    }
-    .appetizer:nth-child(4){
-        animation-delay: 6.6s;
-    }
-    @keyframes slideIn{
-        0%{
-            transform: translateX(75px);
-            opacity: 0;
-        }
-        50%{
-            transform: translateX(0);
-            opacity: .6;
-        }
-        100%{
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    .pt-3 {
-        padding: .4rem 1rem !important;
-    }
-    section .redbg {
-        width: 260px;
-        height: auto;
-    }
-    #section-three section .redbg img {
-        bottom: -4%;
-        height: 250px;
-        width: 350px;
-    }
-    .box{
-        margin: 2.5em auto;
-        height: 30%;
-        width: 65%;
-        padding: 35px;
-    }
-    .box:nth-child(1) {
-        animation: slideup .3s ease-in-out 7s forwards;
-    }
-    @keyframes slideup{
-        from{
-            transform: scale(0);
-            opacity: 0;
-        }
-        to{
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    .box:nth-child(2) {
-        animation: up .45s ease-in-out 7.2s forwards;
-    }
-    @keyframes up{
-        from{
-            transform: scale(0);
-            opacity: 0;
-        }
-        to{
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    .box:nth-child(3) {
-        animation: next .6s ease-in-out 7.4s forwards;   
-    }
-    @keyframes next{
-        from{
-            transform: scale(0);
-            opacity: 0;
-        }
-        to{
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    #section-four .col-7 p {
-        margin: 0;
-        font-size: 12px;
-    }
-    #section-four .btn-danger {
-        font-size: 11px;
-    }
-    #section-five .redbg{
-        margin: 0 auto;
-    }
-    #section-five section .redbg img {
-        bottom: -10px;
-        height: 250px;
-        width: 400px;
-    }
-    .reviewer {
-        margin: 0;
-        padding: 0;
-    }
-    .review h5 {
-        margin: 0 auto;
-        font-size: .9rem;
-        text-align: center;
-        width: 80%;
-    }
-    #section-six{
-        padding: 20px 0;
-    }
-    .imagery{
-        top: -150px;
-        left: 50px;
-        animation: slipin .7s ease-in-out;
-    } 
-    .form-floating > label{
-        font-size: .8rem;
-        font-family: 'Poppins';
-    }
-    .form-control{
-        font-size: .8rem;
-    }
-    .form-floating > a{
-        font-size: .8rem;
-    }
-    #scrollToTop {
-        font-size: 22px;
-        padding: 18px 15px;
-    }
 
-}
 
     </style>
     <header class="header">
@@ -728,15 +471,15 @@
 
 
         <!-------------------- start of 5th section -------------------->
-        <!-- <section id="section-five">
+        <section id="section-five">
             <div class="container">
                 <div class="row">
-                    <section class="employee-image col-10 col-md-6 col-lg-4 ">
+                    <div class="employee-image col-10 col-md-6 col-lg-4 ">
                         <div class="redbg">
                             <img src="images/delivery-guy2.png" class="img-fluid" alt="">
                         </div>
-                    </section>
-                    <section class="customerReviews col-12 col-md-6 col-lg-7 mt-5 ">
+                    </div>
+                    <div class="customerReviews col-12 col-md-6 col-lg-7 mt-5 ">
                         <div class="text-center text-lg-start">
                             <h3>Customers Reviews</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aspernatur similique perferendis quisquam molestias est?</p>
@@ -759,7 +502,6 @@
                                             <i class="icon-star2"></i>
                                         </div>
                                     </ul>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -767,10 +509,10 @@
                             <button class="btn btn-danger icon-long-arrow-left"></button>
                             <button class="btn btn-danger icon-long-arrow-right"></button>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
           <!-------------------- end of 5th section -------------------->
 
