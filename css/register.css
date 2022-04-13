@@ -1,0 +1,58 @@
+:root{
+    --blue: rgba(15,115,238,255);
+    --font1: 'Anek Tamil';
+    --font2: 'Poppins';
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font1);
+}
+body{
+    background-image: url("../images/fastfoodbg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+ul, li{
+    list-style-type: none;
+    list-style: none;
+}
+.container {
+    position: relative;
+    left: -25%;
+    display: flex;
+    bottom: -10%;
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    border-radius: 10px;
+    width: 26%;
+    background-color: rgb(255, 255, 255, .1);
+    padding: 20px;
+}
+.input-group {
+    width: 120%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -20px;
+    color: #aaa;
+    justify-content: center;
+}
+.input-group:first-child{
+    font-family: var(--font2);
+    color: #fff;
+}
+.input-group>.form-control:focus{
+    border: 2px solid var(--blue);
+    box-shadow: none;
+}

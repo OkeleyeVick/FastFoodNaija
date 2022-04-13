@@ -1,0 +1,329 @@
+:root{
+    --blue: rgba(15,115,238,255);
+    --font1: 'Anek Tamil';
+    --font2: 'Poppins';
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font1);
+}
+a{
+    text-decoration: none !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+ul, li{
+    list-style-type: none;
+    list-style: none;
+}
+body{
+    background-color: #ddd;
+    /* width: 100vw; */
+}
+.container-fluid{
+    top: -10px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.container-fluid .search-bar{
+    width: 500px;
+    display: flex;
+    align-items: stretch;
+}
+.container-fluid .search-bar i{
+    font-size: 13px;
+    color: #aaa;
+    top: 33%;
+    left: 2%;
+}
+.container-fluid .search-bar a{
+    border-radius: 0 40pc 40pc 0;
+    font-size: 14px;
+}
+.container-fluid .search-bar a:focus{
+    box-shadow: none;
+}
+.container-fluid .search-bar:focus-within i,
+.container-fluid .search-bar:focus-within input{
+   color: #333;
+}
+.container-fluid input{
+    font-size: 13px;
+    color: #aaa;
+    width: 100%;
+    padding: 5px 0 3px 30px;
+    border-radius: 40pc 0 0 40pc;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.container-fluid input:focus{
+    border: 2px solid var(--blue);
+}
+.container-fluid .logo1 ul{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid .logo1 ul li{
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container-fluid .logo1 ul i{
+    font-size: 16px;
+}
+.container-fluid .logo1 ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 6px 0 6px;
+    color: #000;
+}
+.container-fluid .logo1 ul li ul{
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    padding: 0;
+    /* display: block; */
+    top: 30;
+    background: var(--blue);
+    left: -10;
+    display: none;
+}
+.container-fluid .logo1 ul li:hover ul{
+    display: block;
+}
+.container-fluid .logo1 ul li ul li{
+    float: left;
+    display: block;
+    width: 100%;  
+    line-height: 1.6rem;
+}
+.container-fluid .logo1 ul li ul li a{
+    font-size: 13px;  
+    color: #fff;
+
+}
+
+
+.body{
+    position: relative;
+    top: 80px;
+}
+.body .container .links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+.body .container .links ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+
+
+/* styles for extra large screens above 1199px eg laptop*/
+@media (min-width: 1200px){
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles for large screens above 991px eg desktops*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+}
+/* styles for medium screens above 767px eg tablets*/
+@media (min-width: 768px) and (max-width: 991.98px){
+
+}
+/* styles for small screens above 576px eg phone*/
+@media (min-width: 576px) and (max-width: 767.98px){
+
+}
+/* styles for extra small screens above 320px eg smaller phones*/
+@media (min-width: 320px) and (max-width: 575.98px){
+    .container-fluid{
+        padding: 0 !important;
+        height: auto;
+    }
+    .container-fluid  button,  .container-fluid .brand, .container-fluid .logos{
+        width: 32%;
+    }
+    .container-fluid button{
+        justify-content: flex-start;
+    }
+    .container-fluid .brand{
+        justify-content: center;
+    }
+    .container-fluid .logos{
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    .container-fluid .logo1{
+        display: none;
+    }
+    .container-fluid .search-bar{
+        display: none;
+    }
+    .container-fluid .d-flex .logos{
+        display: block;
+    }
+    .container-fluid .logos i{
+        font-size: 18px;
+    }
+    .container-fluid .logos div{
+        margin: 0 7px;
+    }
+    .container-fluid button i{
+        font-size: 24px;
+    }
+    .container-fluid button:focus, 
+    .offcanvas .offcanvas-header button:focus, .container-fluid .searchBar a:focus{
+        box-shadow: none;
+    }
+    .container-fluid .searchBar{
+        width: 85%;
+        margin: 0 auto;
+        top: -13;
+    }
+    .container-fluid .searchBar .position-absolute{
+        font-size: 18px;
+        color: #ccc;
+        top: 15;
+        left: 9;
+    }
+    .container-fluid .searchBar input {
+        background: #f6f7f9;
+        padding: 5px 0 5px 30px;
+        color: #ccc;
+    }
+    .container-fluid .searchBar:focus-within i,
+    .container-fluid .searchBar:focus-within input{
+        color: #333;
+    }
+    .container-fluid .searchBar:focus-within a i{
+        color: #fff;
+    }
+    .offcanvas.show {
+        width: 85%;
+    }
+    .offcanvas-header{
+        border-bottom: 1px solid #ccc;
+    }
+    .offcanvas-body {
+        position: relative;
+    }
+    .offcanvas .navigation {
+        position: absolute;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        top: 11%;
+        left: 0;
+        padding-left: 30px;
+    }
+    .offcanvas .navigation div{
+        line-height: 3rem;
+        align-items: center;
+        display: flex;
+    }
+    .offcanvas .navigation div:nth-child(5), .offcanvas .navigation div:nth-child(6){
+        justify-content: center;
+    }
+    .offcanvas .navigation div i{
+        font-size: 1.4rem;
+        color: #444;
+    }
+    .offcanvas .navigation div li a{
+        margin-left: 1.2rem;
+    }
+    .offcanvas .navigation div:nth-child(4) {
+        border-bottom: 1px solid #ccc;
+    }
+    .offcanvas .navigation div:nth-child(5),
+    .offcanvas .navigation div:nth-child(6){
+        margin-top: 20px;
+    }
+    .offcanvas .navigation div:nth-child(5) li,
+    .offcanvas .navigation div:nth-child(6) li{
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        font-size: .9rem;
+    }
+    .offcanvas .navigation div:nth-child(5) li{
+        background-color: var(--blue);
+    }
+    .offcanvas .navigation div:nth-child(5) li a{
+        color: #fff;
+    }
+    .offcanvas .navigation div:nth-child(5) li a,
+    .offcanvas .navigation div:nth-child(6) li a{
+        margin: 0;
+    }
+    .offcanvas .navigation div:nth-child(6) li{
+        border: 2px solid #ccc;
+    }
+    .offcanvas .navigation div:nth-child(6) li:focus{
+        background-color: var(--blue);
+    }
+    .offcanvas .offcanvas-header button{
+        background: none;
+        opacity: 1;
+        transform: rotateZ(-90deg);
+        font-size: 24px;
+    }
+    
+    
+
+}
