@@ -48,7 +48,7 @@ body{
 }
 .body .side-images-left{
     width: auto;
-    top: 740px;
+    top: 38pc;
     z-index: 1;
 }
 .body .side-images-left > div > div:nth-child(1){
@@ -68,7 +68,7 @@ body{
 }
 .body .side-images-right{
     width: auto;
-    top: 1140px;
+    top: 65pc;
     z-index: 1;
     right: 0;
 }
@@ -213,9 +213,7 @@ body{
 
 
 
-.body .description div:last-child p{
-   font-size: 1rem;
-}
+
 .body .description div p a{
     background: var(--blue);
     color: var(--white);
@@ -300,7 +298,6 @@ body{
     text-align: left;
 }
 .body .promo .card-holder .card-description p:first-of-type{
-    font-size: .3rem;
     font-family: var(--font2);
     margin: 0 0 1.1rem 0;
 }
@@ -625,13 +622,16 @@ body{
 }
 /* styles for extra small screens above 320px eg smaller phones*/
 @media (min-width: 320px) and (max-width: 575.98px){
-    h1, h2, h3, h4{
-        font-size: 13px !important;
+    h1, h2, h3, h4, h5, h6, p, s, a{
+        font-family: var(--font1) !important;
+    }
+    h1, h2, h4{
+        font-size: 14px !important;
     }
     h3{
+        font-size: 16px !important;
         font-weight: bolder;
-        letter-spacing: 1px;
-        font-family: monospace;
+        font-family: var(--font1);
     }
     h5{
         font-size: 12px !important;
@@ -654,6 +654,9 @@ body{
     }
     .side-images-right{
         top: 31.1%;
+    }
+    .container-fluid * i{
+        color: var(--white);
     }
     .container-fluid  button,  .container-fluid .brand, .container-fluid .logos{
         width: 32%;
@@ -706,6 +709,7 @@ body{
         padding: 5px 0 5px 30px;
         color: #ccc;
         transition: .2s ease-in;
+        border-radius: 3px;
     }
     .container-fluid .searchBar:focus-within i,
     .container-fluid .searchBar:focus-within input{
@@ -791,6 +795,10 @@ body{
     }
 
     /* styles for body */
+
+    .body * i {
+        font-size: 16px;
+    }
     .body .description > div,.body .container .burger{
         text-align: center;
     }
@@ -840,10 +848,11 @@ body{
         margin: 20px 0;
     }
     .body .promo .card-holder .card-description p:first-of-type {
-        margin: 0 0 0.1rem 0;
+        margin: 0 0 0.5rem 0;
+        font-size: 14px !important;
     }
     .body .promo .card-holder .card-description h3 {
-        font-size: 120%;
+        font-size: 14px;
     }
     .body .promo .card-holder:first-child .image img {
         width: 150px;
@@ -902,7 +911,15 @@ body{
         font-size: .6rem !important;
     }
     
-    
+    .body .description div p a {
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        padding: 0.375rem 0.75em;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+    }
     .body .description ul {
         margin: 30px 0;
     }
@@ -936,7 +953,7 @@ body{
         margin-top: 5%;
     }
     .body .footer .container > div > div:nth-child(3) div li {
-        width: 5%;
+        width: 9%;
     }
     .footer .container > div .brand a img{
         width: 120px;
@@ -945,7 +962,7 @@ body{
         display: flex;
         align-items: stretch;
         position: relative;
-        width: 65%;
+        width: 80%;
     }
     .footer .container > div .newsletter form a {
         text-align: center;
@@ -955,7 +972,7 @@ body{
         border-radius: 0 5px 5px 0;
     }
     .footer .container > div .newsletter form a i{
-        font-size: 14px;
+        font-size: 16px;
     }
     .footer .container > div .newsletter input{
         font-size: 13;
