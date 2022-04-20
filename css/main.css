@@ -454,7 +454,7 @@ body{
 .body .pre-footer .newsletter form > i{
     position: absolute;
     color: #6c757d;
-    top: 50%;
+    top: 46%;
     left: 6;
     font-size: 1.1rem;
 }
@@ -552,54 +552,12 @@ body{
 
 
 
-
 /* styles for extra large screens above 1199px eg laptop*/
 @media (min-width: 1200px){
     .body{
         position: relative;      
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* styles for large screens above 991px eg desktops*/
@@ -946,7 +904,7 @@ body{
         left: 0;
     }
     .body .footer{
-        margin: 2.5pc 0 1pc 0;
+        margin: 0pc 0 1pc 0;
     }
     .body .footer .container > div > div {
         padding-left: 0%;
@@ -969,7 +927,7 @@ body{
         padding: 0.375rem 0.75rem;
         display: grid;
         align-items: center;
-        border-radius: 0 5px 5px 0;
+        border-radius: 2px;
     }
     .footer .container > div .newsletter form a i{
         font-size: 16px;
@@ -980,6 +938,7 @@ body{
         width: 100%;
         outline: none;
         border: 1px solid #fff;
+        border-radius: 2px;
     }
     .footer .container > div .newsletter form i:not(.newsletter form a i){
         font-size: 14px;
@@ -990,6 +949,9 @@ body{
     }
     .body .footer .container > div > div > div{
         margin-top: .5pc;
+    }
+    .body .footer p{
+        margin: 0;
     }
 
 
