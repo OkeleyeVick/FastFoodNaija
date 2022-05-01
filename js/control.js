@@ -11,7 +11,6 @@ $(document).ready(function(){
         $('.body .menu > div > div > li').addClass("active").siblings().removeClass('active');
         })
     })
-    $(document).on("load", function(){
-        $('.preloader').fadeOut(900);
-    })
+    
+    
 })
