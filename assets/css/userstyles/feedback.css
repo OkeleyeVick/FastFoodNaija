@@ -1,0 +1,193 @@
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('../SpaceGrotesk-VariableFont_wght.ttf');
+}
+:root{
+    --font-family: SpaceGrotesk;
+    --dark: #282828;
+    --black: #000;
+    --primary: #f03333;
+    --blue: #106ffb;
+    --primary-dark: #ef2525;
+    --light-dark: #323232;
+    --deep-dark: #12181b;
+    --white: #fff;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+p{margin: 0;}
+ul{padding: 0; margin: 0;list-style-type: none;}
+a{text-decoration: none}
+
+body{font-family: var(--font-family)}
+
+.body__wrapper__inner > div.position-relative{
+    background-color: grey;
+    background-image: url('../../images/jarritos-mexican-soda-idP6ct9jkmk-unsplash.jpg');
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -100px;
+    display: flex;
+    align-items: center;
+}
+.body__wrapper__inner .layer__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 0 0 / 0.5);
+    height: 100%;
+    width: 100%;
+}
+.body__wrapper__inner > div.position-relative h3{
+    font-weight: 900;
+    letter-spacing: .4px;
+    color: var(--white);
+    font-size: 2rem;
+}
+.body__wrapper__inner .reviews{
+    padding: 5pc 0
+}
+
+.reviews .review__header{
+    margin: 0 0 3rem;
+}
+.reviews__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.each__review{
+    width: 32%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 6px;
+    min-height: 200px;
+    max-width: 100%;
+    margin-bottom: 1.8rem;
+    border: 1px solid #e0dfdf;
+}
+.each__review__inner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.2rem
+}
+.each__review__inner > div:is(.body, .foot){
+    margin-top: 1rem
+}
+.each__review .top{
+    display: flex;
+    align-items: center;
+}
+.each__review .top .image{
+    margin-right: 14px;
+}
+.each__review .image img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px
+}
+.each__review .top .name{
+    line-height: 1.2;
+}
+.each__review .top .pos{
+    color: #7a7474;
+}
+.each__review .body .text{
+    font-size:.95rem;
+    color:var(--black)
+}
+
+.each__review .foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.each__review .foot small{
+    color: #7a7474;
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+    letter-spacing: .3px;
+}
+
+
+/* form__review */
+.review__form{
+    padding-bottom: 5pc;
+}
+.review__form__inner{
+    padding: 3pc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-bottom: 5pc;
+    width: 70%;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
+}
+.review__form .review__form__header{
+    margin-bottom: 2rem;
+}
+.review__form :is(.each__form, .textarea, .file){
+    margin-bottom: 1.5rem;
+}
+.file .small{
+    margin: 2px 0 8px;
+    color: #7a7474;
+}
+.review__form div.each__form input{
+    height: 3rem
+}
+.review__form .form-control:focus{
+    box-shadow: none;
+    bordeR: 2px solid var(--primary);
+}
+.review__form .file .form-control{
+    font-size: 1rem
+}
+.review__form .submit {
+    margin-top: 2rem;
+}
+.review__form .submit button{
+    background-color: var(--primary);
+    color: var(--white);
+    width: 11rem;
+    padding: .7rem 0;
+    border: none;
+    border-radius: 7px;
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    -ms-transition: 300ms ease-in-out;
+    -o-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+}
+.review__form .submit button:hover{
+    background-color: var(--primary-dark);
+}
+/* media queries */
+@media all and (max-width: 1200px){
+    .each__review{
+        width: 48%;
+    }
+}
+@media all and (max-width: 768px){
+    .each__review{
+        width: 100%;
+    }
+    .body__wrapper__inner > div.position-relative{
+    background-position-y: 0;
+    }
+}
+@media all and (max-width: 600px){
+    .review__form__inner{
+        padding: 2pc 1pc;
+        width: 100%;
+    }
+}
+@media all and (max-width:425){
+    .body__wrapper__inner > div.position-relative{
+        background-position-y: 0;
+    }
+}

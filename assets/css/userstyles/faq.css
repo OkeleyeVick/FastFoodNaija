@@ -1,0 +1,52 @@
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('../SpaceGrotesk-VariableFont_wght.ttf');
+}
+:root{
+    --font-family: SpaceGrotesk;
+    --dark: #282828;
+    --black: #000;
+    --primary: #f03333;
+    --blue: #106ffb;
+    --primary-dark: #ef2525;
+    --light-dark: #323232;
+    --deep-dark: #12181b;
+    --white: #fff;
+    --grey: #f6f6f6;
+    --tertiary-one: #F5DEB6;
+    --tertiary-two: #FFEBC6;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+p{margin: 0;}
+ul{padding: 0; margin: 0;list-style-type: none;}
+a{text-decoration: none}
+
+body{font-family: var(--font-family)}
+.body__wrapper__inner > div.position-relative{
+    background-color: grey;
+    background-image: url(../../images/dinner-food-meal-8313.jpg);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    display: flex;
+    align-items: center;
+}
+.body__wrapper__inner .layer__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 0 0 / 0.5);
+    height: 100%;
+    width: 100%;
+}
+.body__wrapper__inner > div.position-relative h3{
+    font-weight: 900;
+    letter-spacing: .4px;
+    color: var(--white);
+    font-size: 2rem;
+}
+.body__wrapper__inner .faq{
+    padding: 5pc 0
+}

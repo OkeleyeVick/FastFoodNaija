@@ -1,0 +1,88 @@
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('../SpaceGrotesk-VariableFont_wght.ttf');
+}
+:root{
+    --font: SpaceGrotesk;
+    --primary: #f03333;
+    --primary-dark: #e41b1b;
+    --white: #fff;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+p{margin: 0;}
+ul{padding: 0; margin: 0;list-style-type: none;}
+a{text-decoration: none}
+
+body{font-family: var(--font);}
+.body__wrapper__inner > div.position-relative{
+    background-image: url('../../images/elevate-snnhGYNqm44-unsplash.jpg');
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+}
+.body__wrapper__inner .layer__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 0 0 / 0.5);
+    height: 100%;
+    width: 100%;
+}
+.body__wrapper__inner > div.position-relative h3{
+    font-weight: 900;
+    letter-spacing: .4px;
+    color: var(--white);
+    font-size: 2rem;
+}
+.form{padding-top: 5pc;padding-bottom: 5pc;}
+.form h2{
+    margin-bottom: 3rem;
+}
+form .each__form{
+    margin-bottom: 1.5rem;
+}
+form .each__form :is(.form-control, .form-select){
+    min-height: 3.25rem;
+}
+form .each__form :is(.form-control, .form-select):focus{
+    box-shadow: none;
+    border: 2px solid var(--primary)
+}
+form .form-label{
+    font-weight: 600;
+    letter-spacing: .4px;
+}
+form .each__form select{font-size: 1rem}
+.form-check-input:checked[type=checkbox]{
+    background-image: url('../../images/heavy-check-mark.svg');
+    background-size: 80%;
+}
+form .form-check-input:checked{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.form-check-input:focus {
+    border-color: var(--primary);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(221 100 100 / 30%);
+}
+form .submit button{
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 21px;
+    padding: .8rem 4rem;
+    -webkit-transition: 290ms ease-in-out;
+    -moz-transition: 290ms ease-in-out;
+    -ms-transition: 290ms ease-in-out;
+    -o-transition: 290ms ease-in-out;
+    transition: 290ms ease-in-out;
+}
+form .submit button:hover{
+    background-color: var(--primary-dark);
+}

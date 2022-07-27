@@ -1,0 +1,140 @@
+<!-- <?php
+    error_reporting(E_ALL);
+
+    if(isset($_POST['submit'])){
+    
+    session_start();
+
+    include_once('backend/config.php');
+
+        $firstname = ucfirst(mysqli_real_escape_string($conn, $_POST['firstname']));
+        $lastname = ucfirst(mysqli_real_escape_string($conn, $_POST['lastname']));
+        $username = mysqli_real_escape_string($conn, $_POST['username']);
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $password = mysqli_real_escape_string($conn, $_POST['password']);
+        $cpassword = mysqli_real_escape_string($conn, $_POST['cpassword']);
+
+        
+        
+        
+       
+        // CREATE TABLE customers (
+        //     id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        //     firstname VARCHAR(255) NOT NULL, 
+        //     lastname VARCHAR(255) NOT NULL, 
+        //     username VARCHAR(255) NOT NULL, 
+        //     password VARCHAR(255) NOT NULL, 
+        //     cpassword VARCHAR(255) NOT NULL
+        // )
+
+    }
+
+>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/userstyles/register.css">
+    <title>FoodExpress Register</title>
+</head>
+<body>
+    <!-- <div class="preloader">
+    </div> -->
+    <div class="wrapper">
+        <div class="wrapper__inner">
+            <div class="form__container">
+                <div class="form__container__inner">
+                    <div class="row col-12 align-items-center m-0 position-relative">
+                        <div class="fixed__position">
+                            <div class="logo">
+                                <img src="assets/images/food-delivery-logo-by-abhishek-choudhary-dribbble.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="part__one col-12 col-md-6">
+                            <form action="" method="">
+                                <div class="input-header text-start">
+                                    <h4>Sign up</h4>
+                                </div>
+                                <div class="input__group">
+                                    <input type="text" class="form-control" placeholder="Username" name="username">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                                <div class="input__group">
+                                    <input type="text" class="form-control" placeholder="Email" name="email">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="input__group">
+                                    <input type="password" class="form-control" placeholder="Password" name="password">
+                                    <i class="bi bi-lock"></i>
+                                    <i class="bi bi-eye password"></i>
+                                </div>
+                                <div class="submit justify-content-center col-12">
+                                    <button class="" href="" type="submit" name="submit">Register</button>
+                                </div>
+                                <div class="login text-center">
+                                    <p>Already have an account ?&nbsp;&nbsp;<a href="login.php">Login</a></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="part__two p-0 d-none d-md-block col-md-6">
+                            <div class="image__container">
+                                <div class="image__container__inner">
+                                </div>
+                                <div class="bottom__right">
+                                    <small>&copy; 2022 Food<span>Express</span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/control.js"></script>
+    <script>
+    //     $(window).on("load", function(){
+    //     $('.preloader').fadeOut();
+    // })
+
+    $(document).ready(function(){
+        let showEye = $(document.getElementsByClassName('bi-eye'));
+        let passwordInput = $(document.querySelector('[type="password"]'));
+        
+        $(showEye).on('click', function(){
+            if($(passwordInput).attr('type') === 'password'){
+                $(passwordInput).attr('type', 'text');
+                showEye.removeClass('bi-eye')
+                showEye.addClass('bi-eye-slash')
+            }else{
+                $(passwordInput).attr('type', 'password');
+                showEye.addClass('bi-eye')
+                showEye.removeClass('bi-eye-slash')
+            }  
+        })
+    })
+
+
+    </script> 
+
+</body>
+</html>

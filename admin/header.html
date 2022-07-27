@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/fonts/boxicon/css/boxicons.css">
+    <link rel="stylesheet" href="../assets/fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/adminstyles/header.css">
+    <title>Landing page</title>
+</head>
+<body>
+    <nav>
+        <div class="position-relative">
+            <div class="nav__wrapper">
+                <div class="nav__wrapper__inner">
+                    <div class="nav__wrapper__header">
+                        <div class="item">
+                            <a href="#" class="navbar d-none d-md-block"><em class="bi bi-list"></em></a>
+                            <a href="" class="logo">
+                                <div><img src="../assets/images/favicon_without_bg.png" alt="" class="img-fluid"></div>
+                                <div class="span">Food<span>Express</span></div>
+                            </a>
+                            <a href="#" class="d-md-none"><em class="bi bi-arrow-left-short"></em></a>
+                        </div>
+                    </div>
+                    <div class="nav__wrapper__body">
+                        <div class="nav__inner__body">
+                            <div class="item">
+                                <a href="">
+                                    <div><em class="bi bi-graph-up-arrow"></em></div>
+                                    <div><span>Analytics Dashboard</span></div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div><em class="bi bi-people"></em></div>
+                                    <div><span>User Manage</span></div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div><em class="bi bi-basket"></em></div>
+                                    <div><span>Update Food Menu</span></div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div><em class="bi bi-cash-coin"></em></div>
+                                    <div><span>Transactions</span></div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div><em class="bi bi-power"></em></div>
+                                    <div><span>Sign Out</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div class="header__inner">
+                <a href=""><div class="icon"><em class="bi bi-file-text"></em></div></a>
+                <div class="user">
+                    <div class="user__inner">
+                        <div class="u"><em class="bi bi-person"></em></div>
+                        <div class="user__detail position-relative">
+                            <div class="user__position"><small>Admininstrator</small></div>
+                            <div class="user__name"><span>Okeleye Victor Olamide</span> <a href="#"><em class="bx bx-chevron-down"></em></a></div>
+                            <!-- <div class="dropdown">
+                                <div class="dropdown__inner">
+                                    <div class="head">
+                                        <div><span>JD</span></div>
+                                        <div>
+                                            <strong>John Doe</strong>
+                                            <small>JohnDoe@JD.com</small>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div><a href=""></a></div>
+                                        <div><a href=""></a></div>
+                                        <div><a href=""></a></div>
+                                        <div><a href=""></a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer__inner">
+                                            <a href="#">
+                                                <div><em class="bi bi-box-arrow-right"></em></div>
+                                                <div><span>Sign out</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="body">
+            <div class="body__inner">
+                <div class="pre">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/control.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.navbar').on('click', () => {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

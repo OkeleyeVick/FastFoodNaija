@@ -1,0 +1,123 @@
+<!-- <?php
+    include_once 'backend/config.php';
+    session_start();
+    error_reporting(E_ALL);
+
+    if(isset($_POST['submit'])){
+
+
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $password = mysqli_real_escape_string($conn, $_POST['password']);
+
+
+        
+        
+        
+   
+
+    }
+> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/userstyles/login.css">
+    <title>FoodExpress Login</title>
+</head>
+<body>
+    <!-- <div class="preloader">
+    </div> -->
+    <div class="wrapper">
+        <div>
+            <div>
+                <div class="row col-12 m-0 wrapper__inner">
+                    <div class="col-md-4 part__one d-none d-lg-block">
+                        <div class="header">
+                            <div class="logo text-center">
+                               <h3>FoodExpress's Menu</h3>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div>
+                                <h3 class="text-center">Welcome back!<br> <br>Sign in to purchase your tasty food</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 part__two">
+                        <div class="header text-md-end">
+                            <div><span>Don't have an account?&nbsp;&nbsp;&nbsp;</span><a href="register.php">Register</a></div>
+                        </div>
+                        <div class="body">
+                            <div>
+                                <form action="" method="">
+                                    <div class="input__group col-8 col-md-10 text-white">
+                                        <h3>Login</h3>
+                                    </div>
+                                    <div class="form-floating input__group">
+                                        <i class="bi bi-envelope"></i>
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email</label>
+                                    </div>
+                                    <div class="form-floating input__group">
+                                        <i class="bi bi-lock"></i>
+                                        <i class="bi bi-eye password"></i>
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <!-- <div class="input__group form-floating col-8 col-md-10">
+                                        
+                                    </div>
+                                    <div class="form-floating input__group col-8 col-md-10">
+                                       
+                                    </div> -->
+                                    <div class="input__group justify-content-center col-12">
+                                        <button type="submit" name="submit">Submit</button>
+                                    </div>
+                                    <div class="input__group justify-content-center col-md-8 col-md-10">
+                                        <span>Forgot password ? <a href="#"> Click here</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/control.js"></script>
+    <script>
+            // $(window).on("load", function(){
+    //     $('.preloader').fadeOut();
+    // })
+    $(document).ready(function(){
+        let showEye = $(document.getElementsByClassName('bi-eye'));
+        let passwordInput = $(document.querySelector('[type="password"]'));
+        
+        $(showEye).on('click', function(){
+            if($(passwordInput).attr('type') === 'password'){
+                $(passwordInput).attr('type', 'text');
+                showEye.removeClass('bi-eye')
+                showEye.addClass('bi-eye-slash')
+            }else{
+                $(passwordInput).attr('type', 'password');
+                showEye.addClass('bi-eye')
+                showEye.removeClass('bi-eye-slash')
+            }  
+        })
+    })
+    </script>
+
+</body>
+</html>
